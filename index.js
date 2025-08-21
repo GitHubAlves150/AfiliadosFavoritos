@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose_ =  require('mongoose');
 //Import cors lib
 const cors = require('cors');
-const express = require('express');
+
 //Fim import lib cors
 //Use o midleware cors ANTES de abrir as suas rotas
 app.use(cors());
