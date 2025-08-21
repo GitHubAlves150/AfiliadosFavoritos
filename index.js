@@ -4,12 +4,13 @@ const mongoose_ =  require('mongoose');
 const cors = require('cors');
 
 //Fim import lib cors
+
+const app = express();
+app.use(express.json());
 //Use o midleware cors ANTES de abrir as suas rotas
 app.use(cors());
 
 //Sua rota de exemplo, que lista os dados
-const app = express();
-app.use(express.json());
 //const port = 3000;
 const port = process.env.PORT || 3000;
 
